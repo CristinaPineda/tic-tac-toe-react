@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Board from './Board';
 import '../index.css';
 
-class Game extends React.Component {
+export default class Game extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -49,7 +49,7 @@ class Game extends React.Component {
 
     const moves = history.map((step, move) => {
       const desc = move ?
-        'Go to move #' + move :
+        'Go to move ' + move :
         'Go to game start';
       return (
         <li key={move}>
@@ -70,7 +70,7 @@ class Game extends React.Component {
         <div className="game-board">
           <Board
             squares={current.squares}
-            onClick={i => this.handleClick(i)}
+            onClick={(i) => this.handleClick(i)}
           />
         </div>
         <div>
@@ -103,5 +103,3 @@ function calculateWinner(squares) {
   }
   return null;
 }
-
-export default Game;

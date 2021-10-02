@@ -6,69 +6,98 @@ body {
     background-repeat: no-repeat;
   }
   
-  ol, ul {
-    padding-left: 30px;
-  }
-  
-  .board-row:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  
-  .status {
-    margin-bottom: 10px;
-  }
-  
-  .square {
-    background: #fff;
-    border: 1px solid #999;
-    float: left;
-    font-size: 54px;
-    font-weight: bold;
-    line-height: 34px;
-    height: 74px;
-    margin-right: -1px;
-    margin-top: -1px;
-    padding: 0;
-    text-align: center;
-    width: 74px;
-  }
-  
-  .square:focus {
-    outline: none;
-  }
-  
-  .kbd-navigation .square:focus {
-    background: #ddd;
-  }
-  
-  .game {
-    margin-top: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .game-info {
-    margin-left: 20px;
-    color: black;
-    font-size: large;
-    font-style: italic;
-    font-weight: 600;
-  }
+ol, ul {
+  padding-left: 30px;
+}
 
-  li button {
-    background-color: forestgreen;
-    font-size: 15px;
-    border-radius: 5px;
-    border: 2px solid darkgreen;
-    margin: 2px;
-  }
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
 
-  .name {
-    color: yellow;
-    margin-left: 20px;
-    font-style: italic;
-    font-weight: 600;
-  }
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 74px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 74px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.game-info {
+  margin-left: 20px;
+  background-color: rgba(240,248,255, 0.8);
+  color: darkslategray;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 10px;
+}
+
+li button {
+  background-color: forestgreen;
+  color: aliceblue;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid darkgreen;
+  margin: 2px;
+}
+
+ li button:hover {
+  background-color: darkgreen;
+  border: 2px solid forestgreen;
+}
+
+button:hover {
+  background-color: gold;
+  color: gray;
+}
+
+.name {
+  color: yellow;
+  margin-left: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.header {
+  background-color: gold;
+  color: darkred;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header h1 {
+  margin-left: 20px;
+}

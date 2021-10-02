@@ -1,10 +1,14 @@
-import React from 'react';
-import Game from './components/Game';
+import React, { Component } from "react";
+import Game from "./components/Game";
+import Header from "./components/Header";
 
-export default function App () {
-  return (
-    <div>
-      <Game />
-    </div>
-  )
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <Game />
+      </div>
+    );
+  }
 }
