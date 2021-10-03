@@ -15,6 +15,7 @@ export default function Contact() {
           <p><img alt='cris-css' src='https://icongr.am/devicon/css3-original-wordmark.svg?size=50&color=currentColor' /></p>
         </div>
       <div className="links">
+        <h2>Entre em contato comigo em: </h2>
         <p>
           <img alt="cris-git" src={ github } width="48px"/>
           <a href="https://github.com/CristinaPineda" target="blank">GitHub</a>
@@ -25,7 +26,7 @@ export default function Contact() {
         </p>
         <p>
           <img alt="cris-zap" src={ zap }/>
-          Meu contato: (11)94720.1686
+          (11)94720.1686
         </p>
         <p>
           <img alt="cris-mail" src="https://img.icons8.com/fluency/48/000000/email-open.png"/>
